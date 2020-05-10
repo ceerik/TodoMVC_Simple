@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>TodoMVC</title>
+</head>
+<body>
+    <main>
+        <div id="title">
+            <h1>TodoMVC</h1>
+        </div>
+        <div id="content">
+            <div id="header">
+                <div id="toggleAll">
+                    <button type="button" id="toggleAllButton" title="Toggle all items">
+                        <img id="toggleAllImage" src="circle-down.svg" alt="Toggle all items">
+                    </button>
+                </div>
+                <div id="itemInput">
+                    <form>
+                        <input type="text" name="itemText" id="itemInputBox">
+                    </form>
+                </div>
+            </div>
+            <div id="todoItems">
+                    <div class="todoItem template">
+                        <div class="todoItemToggle">
+                            <button type="button" class="todoItemToggleButton" title="Toggle item">
+                                <img src="checkbox-unchecked.svg" alt="" class="todoItemToggleImage">
+                            </button>
+                        </div>
+                        <div class="todoItemTextBox">
+                            <p class="todoItemText">Halloj</p>
+                        </div>
+                        <div class="todoItemDelete">
+                            <button type="button" class="todoItemDeleteButton" title="Delete item">
+                                <img src="cross.svg" alt="" class="todoItemDeleteImage">
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            <div id="footer">
+                <div id="itemsLeft">
+                    <p>0 items left</p>
+                </div>
+                <div id="itemViewModes">
+                    <div id="footerAll">
+                        <label class="container">All
+                            <input type="radio" name="viewMode" id="footerAllButton" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div id="footerActive">
+                        <label class="container">Active
+                            <input type="radio" name="viewMode" id="footerActiveButton">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div id="footerCompleted">
+                        <label class="container">Completed
+                            <input type="radio" name="viewMode" id="footerCompletedButton">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div id="clearCompleted">
+                    <button type="button" id="clearCompletedButton">Clear completed</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

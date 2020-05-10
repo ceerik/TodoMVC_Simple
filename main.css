@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+text {
+    opacity: 100%;
+}
+
+img {
+    display: block;
+    width: 2em;
+    margin: 0.5em;
+    height: auto;
+    opacity: 50%;
+}
+
+button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Radio button styling inspired by: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+/* Very serious attempts were made at styling the radio buttons according to the TodoMVC example, all failed. */
+
+.container {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.container input {
+    position: absolute;
+    cursor: pointer;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 30em;
+    padding-top: 5em;
+}
+
+#title {
+    text-align: center;
+}
+
+#content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    flex: 0 0 2em;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#toggleAll {
+    flex: 0 1 auto;
+}
+
+#itemInput {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#itemInputBox {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.5em;
+    background-color: transparent;
+}
+
+.backgroundText {
+    opacity: 50%;
+}
+
+#todoItems {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.todoItem {
+    flex: 0 0 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.todoItemToggle {
+    flex: 0 1 auto;
+}
+
+.todoItemTextBox {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.todoItemTextBox {
+    margin: auto;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+}
+
+.todoItemDelete {
+    flex: 0 1 auto;
+}
+
+#footer {
+    flex: 0 0 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+#itemsLeft {
+    padding: 0.25em;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#itemViewModes {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+#footerAll {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerActive {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerCompleted {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clearCompleted {
+    padding: 0.25em;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.todoneItem.todoItem .todoItemToggle .todoItemToggleButton img {
+    content: url('checkbox-checked.svg');
+}
+
+.todoItem .todoItemToggle .todoItemToggleButton img {
+    content: url('checkbox-unchecked.svg');
+}
+
+.todoneItem .todoItemTextBox .todoItemText {
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+.template {
+    display: none;
+}
+
+.hiddenItem {
+    display: none;
+}
+
+.hiddenFooter {
+    display: none !important;
+}
+
+.hiddenClearCompletedButton {
+    display: none;
+}
